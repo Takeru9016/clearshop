@@ -1,6 +1,10 @@
 import { Suspense } from "react";
 
-import { FeaturedCarousel, FeaturedCarouselSkeleton } from "@/components";
+import {
+  CategoryTiles,
+  FeaturedCarousel,
+  FeaturedCarouselSkeleton,
+} from "@/components";
 import {
   FILTER_PRODUCTS_BY_RELEVANCE_QUERY,
   FILTER_PRODUCTS_BY_PRICE_ASC_QUERY,
@@ -97,10 +101,16 @@ export default async function Home({ searchParams }: PageProps) {
           </p>
         </div>
 
-        {/* Category Tiles */}
-
-        {/* Product Section */}
+        {/* Category Tiles - Full width */}
+        <div className="mt-6">
+          <CategoryTiles
+            categories={categories}
+            activeCategory={categorySlug || undefined}
+          />
+        </div>
       </div>
+
+      {/* Product Section */}
     </div>
   );
 }
