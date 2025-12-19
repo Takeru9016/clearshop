@@ -287,7 +287,7 @@ export function ProductFilters({ categories }: ProductFiltersProps) {
       {/* Price Range */}
       <div>
         <FilterLabel isActive={isPriceActive} filterKey="price">
-          Price Range: £{priceRange[0]} - £{priceRange[1]}
+          Price Range: ₹{priceRange[0]} - ₹{priceRange[1]}
         </FilterLabel>
         <Slider
           min={0}

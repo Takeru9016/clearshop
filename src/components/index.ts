@@ -39,3 +39,8 @@ export { ToolCallUI } from "./app/chat/ToolCallUI";
 export { WelcomeScreen } from "./app/chat/WelcomeScreen";
 export { getMessageText } from "./app/chat/utils";
 export { getToolParts } from "./app/chat/utils";
+
+export { AIInsightsCard } from "./admin/AIInsightsCard";
+export { LowStockAlert } from "./admin/LowStockAlert";
+export { RecentOrders } from "./admin/RecentOrders";
+export { StatCard } from "./admin/StatCard";
