@@ -22,6 +22,7 @@ export { Header } from "./app/common/Header";
 export { AddToCartButton } from "./app/common/AddToCartButton";
 export { StockBadge } from "./app/common/StockBadge";
 export { AskAISimilarButton } from "./app/common/AskAISimilarButton";
+export { AppShell } from "./app/common/AppShell";
 
 export { CartSheet } from "./app/cart/CartSheet";
 export { CartSummary } from "./app/cart/CartSummary";
@@ -30,3 +31,11 @@ export { CartItem } from "./app/cart/CartItem";
 export { CheckoutSkeleton } from "./app/checkout/CheckoutSkeleton";
 export { CheckoutButton } from "./app/checkout/CheckoutButton";
 export { SuccessPageSkeleton } from "./app/checkout/SuccessPageSkeleton";
+
+export { ChatSheet } from "./app/chat/ChatScreen";
+export { MessageBubble } from "./app/chat/MessageBubble";
+export { MessageContent } from "./app/chat/MessageContent";
+export { ToolCallUI } from "./app/chat/ToolCallUI";
+export { WelcomeScreen } from "./app/chat/WelcomeScreen";
+export { getMessageText } from "./app/chat/utils";
+export { getToolParts } from "./app/chat/utils";
