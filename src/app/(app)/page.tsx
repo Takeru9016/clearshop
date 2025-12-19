@@ -4,6 +4,7 @@ import {
   CategoryTiles,
   FeaturedCarousel,
   FeaturedCarouselSkeleton,
+  ProductSection,
 } from "@/components";
 import {
   FILTER_PRODUCTS_BY_RELEVANCE_QUERY,
@@ -111,6 +112,13 @@ export default async function Home({ searchParams }: PageProps) {
       </div>
 
       {/* Product Section */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <ProductSection
+          categories={categories}
+          products={products}
+          searchQuery={searchQuery}
+        />
+      </div>
     </div>
   );
 }

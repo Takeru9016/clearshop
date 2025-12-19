@@ -7,3 +7,5 @@ export * from "./queries/stats"
 export * from "./constants/filters"
 export * from "./constants/orderStatus"
 export * from "./constants/stock"
+
+export * from "./store/cart-store"

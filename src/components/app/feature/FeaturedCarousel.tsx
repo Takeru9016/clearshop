@@ -17,7 +17,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn, formatPrice } from "@/lib/utils";
-import { FEATURED_PRODUCTS_QUERYResult } from "../../../sanity.types";
+
+import { FEATURED_PRODUCTS_QUERYResult } from "../../../../sanity.types";
 
 type FeaturedProduct = FEATURED_PRODUCTS_QUERYResult[number];
 
