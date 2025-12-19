@@ -19,3 +19,7 @@ export { Header } from "./app/common/Header";
 export { AddToCartButton } from "./app/common/AddToCartButton";
 export { StockBadge } from "./app/common/StockBadge";
 export { AskAISimilarButton } from "./app/common/AskAISimilarButton";
+
+export { CartSheet } from "./app/cart/CartSheet";
+export { CartSummary } from "./app/cart/CartSummary";
+export { CartItem } from "./app/cart/CartItem";
