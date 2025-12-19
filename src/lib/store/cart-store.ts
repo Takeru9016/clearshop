@@ -28,7 +28,7 @@ export interface CartActions {
 export type CartStore = CartState & CartActions;
 
 // Default state
-export const defaultInitState: CartState = {
+export const defaultCartState: CartState = {
     items: [],
     isOpen: false,
 };
@@ -38,7 +38,7 @@ export const defaultInitState: CartState = {
  * Uses persist middleware with skipHydration for Next.js SSR compatibility
  * @see https://zustand.docs.pmnd.rs/guides/nextjs#hydration-and-asynchronous-storages
  */
-export const createCartStore = (initState: CartState = defaultInitState) => {
+export const createCartStore = (initState: CartState = defaultCartState) => {
     return createStore<CartStore>()(
         persist(
             (set) => ({

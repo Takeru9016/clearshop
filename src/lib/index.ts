@@ -9,3 +9,4 @@ export * from "./constants/orderStatus"
 export * from "./constants/stock"
 
 export * from "./store/cart-store"
+export * from "./store/chat-store"

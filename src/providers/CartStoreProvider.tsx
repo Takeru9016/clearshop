@@ -9,7 +9,7 @@ import {
 } from "react";
 import { useStore } from "zustand";
 
-import { CartState, CartStore, createCartStore, defaultInitState } from "@/lib";
+import { CartState, CartStore, createCartStore, defaultCartState } from "@/lib";
 
 // Store API type
 export type CartStoreApi = ReturnType<typeof createCartStore>;
@@ -36,7 +36,7 @@ export const CartStoreProvider = ({
   const storeRef = useRef<CartStoreApi | null>(null);
 
   if (storeRef.current === null) {
-    storeRef.current = createCartStore(initialState ?? defaultInitState);
+    storeRef.current = createCartStore(initialState ?? defaultCartState);
   }
 
   // Manually trigger rehydration on the client after mount
